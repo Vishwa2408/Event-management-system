@@ -1,0 +1,727 @@
+{
+	"info": {
+		"_postman_id": "98022c07-cfec-4c63-a049-c9eb776396bf",
+		"name": "Event management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36964817"
+	},
+	"item": [
+		{
+			"name": "Create category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Cultural\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create category",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Cultural\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c4-wvbSKnZOuBLbqpu1uTIWco7dbgs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 18:28:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Category created successfully\",\n    \"category\": {\n        \"id\": \"f2840891-d13e-4aaf-8fd1-59f0bc82f480\",\n        \"name\": \"Cultural\",\n        \"updatedAt\": \"2025-01-25T18:28:14.304Z\",\n        \"createdAt\": \"2025-01-25T18:28:14.304Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "create Events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \".NET day event 2 \",\r\n    \"description\": \"You will got more knowledge about .NET in advance levels\",\r\n    \"start_date_time\": \"2025-04-01T10:00:00Z\",\r\n    \"end_date_time\": \"2025-04-01T16:00:00Z\",\r\n    \"categoryIds\": [\r\n        \"d236e479-4114-43da-9299-cfdde243c01a\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create Events",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \".NET day event  \",\r\n    \"description\": \"You will got more knowledge about .NET in advance levels\",\r\n    \"start_date_time\": \"2025-04-01T10:00:00Z\",\r\n    \"end_date_time\": \"2025-04-01T16:00:00Z\",\r\n    \"categoryIds\": [\r\n        \"d236e479-4114-43da-9299-cfdde243c01a\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"events"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "486"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e6-j8DfiIPq5JrpRDEYODUJ28ORuIg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Jan 2025 19:24:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"event\": {\n        \"id\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n        \"name\": \".NET day event 2 \",\n        \"description\": \"You will got more knowledge about .NET in advance levels\",\n        \"start_date_time\": \"2025-04-01T10:00:00.000Z\",\n        \"end_date_time\": \"2025-04-01T16:00:00.000Z\",\n        \"updatedAt\": \"2025-01-24T19:24:24.214Z\",\n        \"createdAt\": \"2025-01-24T19:24:24.214Z\"\n    },\n    \"categories\": [\n        {\n            \"id\": \"d236e479-4114-43da-9299-cfdde243c01a\",\n            \"name\": \"Test category 44\",\n            \"createdAt\": \"2025-01-24T17:29:20.956Z\",\n            \"updatedAt\": \"2025-01-24T17:29:20.956Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2161"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"871-i5ejQnEyMgiqkX+hbyu+VI4SXcI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 18:28:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"categories\": [\n        {\n            \"id\": \"d236e479-4114-43da-9299-cfdde243c01a\",\n            \"name\": \"Test category 44\",\n            \"createdAt\": \"2025-01-24T17:29:20.956Z\",\n            \"updatedAt\": \"2025-01-24T17:29:20.956Z\"\n        },\n        {\n            \"id\": \"b1bda28f-5857-44b2-baca-9ace7d4dcd57\",\n            \"name\": \"Business\",\n            \"createdAt\": \"2025-01-25T18:26:02.858Z\",\n            \"updatedAt\": \"2025-01-25T18:26:02.858Z\"\n        },\n        {\n            \"id\": \"2b7c3c29-8729-49aa-92a7-3b46c8d17e74\",\n            \"name\": \"Conference\",\n            \"createdAt\": \"2025-01-25T18:26:12.755Z\",\n            \"updatedAt\": \"2025-01-25T18:26:12.755Z\"\n        },\n        {\n            \"id\": \"2d6b3a65-9197-40a6-b051-0548cb8919e7\",\n            \"name\": \"Tech\",\n            \"createdAt\": \"2025-01-25T18:26:22.239Z\",\n            \"updatedAt\": \"2025-01-25T18:26:22.239Z\"\n        },\n        {\n            \"id\": \"e43d86f3-9d92-4381-8bf6-5137f3926a06\",\n            \"name\": \"Workshop\",\n            \"createdAt\": \"2025-01-25T18:26:30.977Z\",\n            \"updatedAt\": \"2025-01-25T18:26:30.977Z\"\n        },\n        {\n            \"id\": \"31b37461-8cd6-44b9-a107-db0eddcb097c\",\n            \"name\": \"Charity\",\n            \"createdAt\": \"2025-01-25T18:26:40.272Z\",\n            \"updatedAt\": \"2025-01-25T18:26:40.272Z\"\n        },\n        {\n            \"id\": \"2db5ad1e-b22b-425c-a02e-dea6559cb395\",\n            \"name\": \"Social\",\n            \"createdAt\": \"2025-01-25T18:26:47.415Z\",\n            \"updatedAt\": \"2025-01-25T18:26:47.415Z\"\n        },\n        {\n            \"id\": \"05ad8de0-5262-4e9e-9db5-35d9466dc045\",\n            \"name\": \"Fundraising\",\n            \"createdAt\": \"2025-01-25T18:26:56.426Z\",\n            \"updatedAt\": \"2025-01-25T18:26:56.426Z\"\n        },\n        {\n            \"id\": \"99722f5d-c451-47e1-8b77-b546be89374d\",\n            \"name\": \"Marketing\",\n            \"createdAt\": \"2025-01-25T18:27:12.393Z\",\n            \"updatedAt\": \"2025-01-25T18:27:12.393Z\"\n        },\n        {\n            \"id\": \"2bf68d87-4142-4739-b785-1cc9be9ac49c\",\n            \"name\": \"Launch\",\n            \"createdAt\": \"2025-01-25T18:27:19.902Z\",\n            \"updatedAt\": \"2025-01-25T18:27:19.902Z\"\n        },\n        {\n            \"id\": \"ecb71e6c-8dca-447b-b807-d86860f073da\",\n            \"name\": \"Health & Wellness\",\n            \"createdAt\": \"2025-01-25T18:27:29.248Z\",\n            \"updatedAt\": \"2025-01-25T18:27:29.248Z\"\n        },\n        {\n            \"id\": \"f59d16f6-ef58-4848-a7ff-1275915c97d6\",\n            \"name\": \"Music\",\n            \"createdAt\": \"2025-01-25T18:27:36.800Z\",\n            \"updatedAt\": \"2025-01-25T18:27:36.800Z\"\n        },\n        {\n            \"id\": \"49306a64-d216-452e-923d-0adcec83e63e\",\n            \"name\": \"Festival\",\n            \"createdAt\": \"2025-01-25T18:27:43.992Z\",\n            \"updatedAt\": \"2025-01-25T18:27:43.992Z\"\n        },\n        {\n            \"id\": \"ef47d43f-e6ad-47d2-a6b0-7fdcb01db351\",\n            \"name\": \"Food & Drink\",\n            \"createdAt\": \"2025-01-25T18:28:03.764Z\",\n            \"updatedAt\": \"2025-01-25T18:28:03.764Z\"\n        },\n        {\n            \"id\": \"f2840891-d13e-4aaf-8fd1-59f0bc82f480\",\n            \"name\": \"Cultural\",\n            \"createdAt\": \"2025-01-25T18:28:14.304Z\",\n            \"updatedAt\": \"2025-01-25T18:28:14.304Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get all events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"events"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all events",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/events",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"events"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2402"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"962-F5OdCTC+/4ou9o21i1IwC0YC5sg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 18:38:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"events\": [\n        {\n            \"id\": \"c664b810-4f50-4a09-908b-3c859354cda5\",\n            \"name\": \".NET day event \",\n            \"description\": \"You will got more knowledge about .NET in advance levels\",\n            \"start_date_time\": \"2025-04-01T10:00:00.000Z\",\n            \"end_date_time\": \"2025-04-01T16:00:00.000Z\",\n            \"createdAt\": \"2025-01-24T17:29:44.130Z\",\n            \"updatedAt\": \"2025-01-24T17:29:44.130Z\",\n            \"Categories\": [\n                {\n                    \"id\": \"d236e479-4114-43da-9299-cfdde243c01a\",\n                    \"name\": \"Test category 44\",\n                    \"createdAt\": \"2025-01-24T17:29:20.956Z\",\n                    \"updatedAt\": \"2025-01-24T17:29:20.956Z\",\n                    \"EventCategory\": {\n                        \"createdAt\": \"2025-01-24T17:29:44.144Z\",\n                        \"updatedAt\": \"2025-01-24T17:29:44.144Z\",\n                        \"EventId\": \"c664b810-4f50-4a09-908b-3c859354cda5\",\n                        \"CategoryId\": \"d236e479-4114-43da-9299-cfdde243c01a\"\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n            \"name\": \"Tech conference 3 event update\",\n            \"description\": \"Updated the description of tech cnference 3.\",\n            \"start_date_time\": \"2025-04-01T10:00:00.000Z\",\n            \"end_date_time\": \"2025-04-01T16:00:00.000Z\",\n            \"createdAt\": \"2025-01-24T19:24:24.214Z\",\n            \"updatedAt\": \"2025-01-25T14:58:49.434Z\",\n            \"Categories\": [\n                {\n                    \"id\": \"d236e479-4114-43da-9299-cfdde243c01a\",\n                    \"name\": \"Test category 44\",\n                    \"createdAt\": \"2025-01-24T17:29:20.956Z\",\n                    \"updatedAt\": \"2025-01-24T17:29:20.956Z\",\n                    \"EventCategory\": {\n                        \"createdAt\": \"2025-01-24T19:24:24.240Z\",\n                        \"updatedAt\": \"2025-01-24T19:24:24.240Z\",\n                        \"EventId\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n                        \"CategoryId\": \"d236e479-4114-43da-9299-cfdde243c01a\"\n                    }\n                }\n            ]\n        },\n        {\n            \"id\": \"5f650590-3ed6-462b-81bd-d473e9dd5629\",\n            \"name\": \"Annual Company Meeting\",\n            \"description\": \" A meeting to discuss yearly performance and future goals.\",\n            \"start_date_time\": \"2025-01-31T03:30:00.000Z\",\n            \"end_date_time\": \"2025-01-31T05:30:00.000Z\",\n            \"createdAt\": \"2025-01-25T18:30:34.476Z\",\n            \"updatedAt\": \"2025-01-25T18:30:34.476Z\",\n            \"Categories\": [\n                {\n                    \"id\": \"b1bda28f-5857-44b2-baca-9ace7d4dcd57\",\n                    \"name\": \"Business\",\n                    \"createdAt\": \"2025-01-25T18:26:02.858Z\",\n                    \"updatedAt\": \"2025-01-25T18:26:02.858Z\",\n                    \"EventCategory\": {\n                        \"createdAt\": \"2025-01-25T18:30:34.487Z\",\n                        \"updatedAt\": \"2025-01-25T18:30:34.487Z\",\n                        \"EventId\": \"5f650590-3ed6-462b-81bd-d473e9dd5629\",\n                        \"CategoryId\": \"b1bda28f-5857-44b2-baca-9ace7d4dcd57\"\n                    }\n                },\n                {\n                    \"id\": \"2b7c3c29-8729-49aa-92a7-3b46c8d17e74\",\n                    \"name\": \"Conference\",\n                    \"createdAt\": \"2025-01-25T18:26:12.755Z\",\n                    \"updatedAt\": \"2025-01-25T18:26:12.755Z\",\n                    \"EventCategory\": {\n                        \"createdAt\": \"2025-01-25T18:30:34.487Z\",\n                        \"updatedAt\": \"2025-01-25T18:30:34.487Z\",\n                        \"EventId\": \"5f650590-3ed6-462b-81bd-d473e9dd5629\",\n                        \"CategoryId\": \"2b7c3c29-8729-49aa-92a7-3b46c8d17e74\"\n                    }\n                }\n            ]\n        }\n    ],\n    \"total\": 4,\n    \"page\": 1,\n    \"pages\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "get events with paginated data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/events?limit=1&page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"events"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get events with paginated data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/events?limit=1&page=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"events"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1"
+								},
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "715"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2cb-JmSF9q3swbNGQVCsolmuImw62k0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 14:53:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"events\": [\n        {\n            \"id\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n            \"name\": \".NET day event 2 \",\n            \"description\": \"You will got more knowledge about .NET in advance levels\",\n            \"start_date_time\": \"2025-04-01T10:00:00.000Z\",\n            \"end_date_time\": \"2025-04-01T16:00:00.000Z\",\n            \"createdAt\": \"2025-01-24T19:24:24.214Z\",\n            \"updatedAt\": \"2025-01-24T19:24:24.214Z\",\n            \"Categories\": [\n                {\n                    \"id\": \"d236e479-4114-43da-9299-cfdde243c01a\",\n                    \"name\": \"Test category 44\",\n                    \"createdAt\": \"2025-01-24T17:29:20.956Z\",\n                    \"updatedAt\": \"2025-01-24T17:29:20.956Z\",\n                    \"EventCategory\": {\n                        \"createdAt\": \"2025-01-24T19:24:24.240Z\",\n                        \"updatedAt\": \"2025-01-24T19:24:24.240Z\",\n                        \"EventId\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n                        \"CategoryId\": \"d236e479-4114-43da-9299-cfdde243c01a\"\n                    }\n                }\n            ]\n        }\n    ],\n    \"total\": 2,\n    \"page\": 2,\n    \"pages\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "Update events",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tech conference 3 event update\",\r\n    \"description\": \"Updated the description of tech cnference 3.\"\r\n    // you can add the categories too by using categories:[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/events/9a0ef060-c25e-4b24-9a52-a76c8a45d912",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"events",
+						"9a0ef060-c25e-4b24-9a52-a76c8a45d912"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update events",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tech conference 3 event update\",\r\n    \"description\": \"Updated the description of tech cnference 3.\"\r\n    // you can add the categories too by using categories:[]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/events/9a0ef060-c25e-4b24-9a52-a76c8a45d912",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"events",
+								"9a0ef060-c25e-4b24-9a52-a76c8a45d912"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "361"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"169-/8Uk+1H0gGfN/UXSWfNuwc7EgSo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 14:58:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event updated successfully\",\n    \"event\": {\n        \"id\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n        \"name\": \"Tech conference 3 event update\",\n        \"description\": \"Updated the description of tech cnference 3.\",\n        \"start_date_time\": \"2025-04-01T10:00:00.000Z\",\n        \"end_date_time\": \"2025-04-01T16:00:00.000Z\",\n        \"createdAt\": \"2025-01-24T19:24:24.214Z\",\n        \"updatedAt\": \"2025-01-25T14:58:49.434Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get event by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/events/9a0ef060-c25e-4b24-9a52-a76c8a45d912",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"events",
+						"9a0ef060-c25e-4b24-9a52-a76c8a45d912"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get event by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/events/9a0ef060-c25e-4b24-9a52-a76c8a45d912",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"events",
+								"9a0ef060-c25e-4b24-9a52-a76c8a45d912"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "683"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ab-dLO9H1LbtntGug+KmQk8n0YJjIo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 14:54:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"event\": {\n        \"id\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n        \"name\": \".NET day event 2 \",\n        \"description\": \"You will got more knowledge about .NET in advance levels\",\n        \"start_date_time\": \"2025-04-01T10:00:00.000Z\",\n        \"end_date_time\": \"2025-04-01T16:00:00.000Z\",\n        \"createdAt\": \"2025-01-24T19:24:24.214Z\",\n        \"updatedAt\": \"2025-01-24T19:24:24.214Z\",\n        \"Categories\": [\n            {\n                \"id\": \"d236e479-4114-43da-9299-cfdde243c01a\",\n                \"name\": \"Test category 44\",\n                \"createdAt\": \"2025-01-24T17:29:20.956Z\",\n                \"updatedAt\": \"2025-01-24T17:29:20.956Z\",\n                \"EventCategory\": {\n                    \"createdAt\": \"2025-01-24T19:24:24.240Z\",\n                    \"updatedAt\": \"2025-01-24T19:24:24.240Z\",\n                    \"EventId\": \"9a0ef060-c25e-4b24-9a52-a76c8a45d912\",\n                    \"CategoryId\": \"d236e479-4114-43da-9299-cfdde243c01a\"\n                }\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete event",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/events/c664b810-4f50-4a09-908b-3c859354cda5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"events",
+						"c664b810-4f50-4a09-908b-3c859354cda5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete event",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/events/c664b810-4f50-4a09-908b-3c859354cda5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"events",
+								"c664b810-4f50-4a09-908b-3c859354cda5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-wRdTlJ5aU6ll9KPBiGmQileIzOM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 25 Jan 2025 18:39:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Event deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
